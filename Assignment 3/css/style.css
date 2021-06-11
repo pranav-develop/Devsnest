@@ -1,0 +1,36 @@
+body {
+    color: blue;
+    font-size: 16px;
+}
+.outer-box {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    border: 3px solid blue;
+}
+.heading-outer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.heading-box {
+    position: absolute;
+    transform: translateY(18%);
+    background-color: #fff;
+    padding: 1rem 4rem;
+}
+.heading-box .subhead {
+    text-align: center;
+}
+.content-box {
+    text-align: justify;
+    width: 100%;
+    display: flex;
+}
+.content-box .col {
+    padding: 1rem 2rem;
+    margin: 4rem 0;
+}
+.content-box .col:last-child {
+    border-left: 2px solid blue;
+}

@@ -1,0 +1,106 @@
+:root {
+    --color-outer: #5c5c5c;
+    --color-semiinner: #000;
+    --color-inner: #fff;
+    --color-bg-clock: #fff;
+    --color-stamps: #000;
+    --color-minhand: #000;
+    --color-sechand: #000;
+    --color-hrhand: #000;
+    --color-center-dot: rgb(243, 98, 31);
+    --dimenstion: 600px;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*---general styles-----*/
+.bg-outer {
+    background-color: var(--color-outer);
+}
+.bg-semiinner {
+    background-color: var(--color-semiinner);
+}
+.bg-inner {
+    background-color: var(--color-inner);
+}
+.bg-clock {
+    background-color: var(--color-bg-clock);
+}
+.bg-stamps {
+    background-color: var(--color-stamps);
+}
+.bg-minhand {
+    background-color: var(--color-minhand);
+}
+.bg-sechand {
+    background-color: var(--color-sechand);
+}
+.bg-hrhand {
+    background-color: var(--color-hrhand);
+}
+.bg-center-dot {
+    background-color: var(--color-center-dot);
+}
+.rotate-50 {
+    height: 10px !important;
+    width: 45px !important;
+}
+.bottom-40 {
+    bottom: 40%;
+}
+
+/*-------main styles-----*/
+.outer-container {
+    height: var(--dimenstion);
+    width: var(--dimenstion);
+    box-shadow: -5px -5px 20px 0px;
+}
+.outer-circle {
+    height: calc(var(--dimenstion) - 2.5%);
+    width: calc(var(--dimenstion) - 2.5%);
+}
+.inner-circle {
+    box-shadow: inset 3px 3px 20px 1px #000;
+}
+.time-stamps {
+    width: 10px;
+    height: 45px;
+}
+.hands-box {
+    width: initial;
+    height: initial;
+}
+.hr-hand {
+    width: calc(var(--dimenstion) - 98 / 100 * var(--dimenstion));
+    height: calc(var(--dimenstion) - 70 / 100 * var(--dimenstion));
+    transform-origin: bottom;
+    transform: rotateZ(90deg);
+}
+.min-hand {
+    width: calc(var(--dimenstion) - 99 / 100 * var(--dimenstion));
+    height: calc(var(--dimenstion) - 60 / 100 * var(--dimenstion));
+    transform-origin: bottom;
+    transform: rotateZ(45deg);
+}
+.sec-hand {
+    width: calc(var(--dimenstion) - 99.5 / 100 * var(--dimenstion));
+    height: calc(var(--dimenstion) - 65 / 100 * var(--dimenstion));
+    transform-origin: bottom;
+    transform: rotate(250deg);
+}
+.center-dot {
+    width: calc(var(--dimenstion) - 96.5 / 100 * var(--dimenstion));
+    height: calc(var(--dimenstion) - 96.5 / 100 * var(--dimenstion));
+    transform: translateX(-25%) translateY(50%);
+}
+.clock-brand {
+    top: 20%;
+    transform: translateX(-15px);
+}
