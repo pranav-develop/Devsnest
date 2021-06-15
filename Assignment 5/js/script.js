@@ -2,7 +2,7 @@
 /*---------handlers-----------*/
 let prevVal = null;
 let operation = "";
-let currentVal = "";
+let currentVal = "0";
 
 function handleOperation(operand) {
     switch (operand) {
@@ -16,6 +16,7 @@ function handleOperation(operand) {
             break;
         default:
             performOperation();
+            currentVal = "0";
     }
     if (operand !== "=") operation = operand;
     else operation = "";
@@ -77,7 +78,7 @@ function performOperation() {
         currentVal = "0";
         return;
     }
-    console.log("mai jaa rah" + operation);
+    console.log("mai jaa raha " + operation);
     let temp1 = parseFloat(prevVal);
     let temp2 = parseFloat(currentVal);
     let temp3 = 0;
@@ -96,12 +97,12 @@ function performOperation() {
             break;
         case "/":
             console.log("div");
-            temp = temp1 / temp2;
+            temp3 = temp1 / temp2;
             break;
         default:
             console.log("marao");
     }
     prevVal = temp3.toString();
-    currentVal = "0";
+    currentVal = temp3.toString();
     return;
 }
