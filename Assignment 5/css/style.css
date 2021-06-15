@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    background: rgb(242, 112, 156);
+    background: linear-gradient(175deg, #c04848 0%, #480048 100%);
+}
+/*----general styles-----*/
+.bg-white {
+    background-color: #fff;
+}
+.h-100vh {
+    height: 100vh;
+}
+.bg-trans {
+    background: rgba(255, 255, 255, 0.1);
+}
+.color-letter {
+    color: var(--each-letter-col);
+}
+.color-white {
+    color: #fff;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+/*----specific styles-----------*/
+.button {
+    width: 100px;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
