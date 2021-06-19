@@ -1,0 +1,35 @@
+/*---general styles------*/
+body {
+    overflow: hidden;
+    font-size: 16px;
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.vw-100 {
+    width: 100vw;
+}
+.vh-100 {
+    height: 100vh;
+}
+.gameTop {
+    z-index: 1;
+}
+.overlay {
+    z-index: 10;
+    background-color: #000;
+}
+.target {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    background: url("../img/target.png");
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+.time-counter {
+    right: 3rem;
+    top: 1.5rem;
+}
