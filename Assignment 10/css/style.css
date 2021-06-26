@@ -1,0 +1,21 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(200 * 6 + 12) px;
+    justify-content: center;
+}
+.each-box {
+    min-width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.each-box > div {
+    display: none;
+    color: #000;
+}
