@@ -14,12 +14,59 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="question-container">
-            <div class="questions-box"></div>
-            <div class="buttons-section">
-                <button class="btn btn-primary">
-                    
-                </button>
+        <div class="container">
+            <div class="question-container d-flex justify-content-center align-items-center vh-100 w-50 m-auto">
+                <div class="card p-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 1</h5>
+                        <h6 class="card-subtitle mb-2 text-muted pt-3">Who invented JavaScript</h6>
+                        <div class="card-text pt-3 w-50">
+                            <div class="input-group rounded-2">
+                                <div class="input-group-text option1 ls-1 my-2 ls-1">
+                                    <input
+                                        class="form-check-input mt-0 me-3"
+                                        type="radio"
+                                        value="option1"
+                                        placeholder=""
+                                        name="option"
+                                        aria-label="Radio button for following text input"
+                                    />
+                                    <span>Douglas Crockford</span>
+                                </div>
+                                <div class="input-group-text option2 ls-1 my-2">
+                                    <input
+                                        class="form-check-input mt-0 me-3"
+                                        type="radio"
+                                        value="option2"
+                                        placeholder=""
+                                        name="option"
+                                        aria-label="Radio button for following text input"
+                                    />
+                                    <span>Douglas Crockford</span>
+                                </div>
+                                <div class="input-group-text option3 ls-1 my-2">
+                                    <input
+                                        class="form-check-input mt-0 me-3"
+                                        type="radio"
+                                        value="option3"
+                                        placeholder=""
+                                        name="option"
+                                        aria-label="Radio button for following text input"
+                                    />
+                                    <span>Douglas Crockford</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-section d-flex pt-3 mt-3">
+                            <button class="btn form-control me-2 btn-outline-primary d-none back-button" onclick="prevQuestion()">
+                                Back
+                            </button>
+                            <button class="btn form-control ms-2 btn-primary next-button" onclick="nextQuestion()">
+                                Next Question
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="js/script.js"></script>
