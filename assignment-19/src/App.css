@@ -1,0 +1,12 @@
+.eachCounter {
+    padding: 10px 15px;
+    border: 2px solid rgb(160, 160, 160);
+    cursor: pointer;
+}
+.d-flex {
+    display: flex;
+}
+.heading {
+    font-weight: bold;
+    font-size: 20px;
+}
