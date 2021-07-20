@@ -1,0 +1,20 @@
+.list-container > div {
+    height: 60vh;
+    background-color: rgb(236, 236, 236);
+    overflow-y: scroll;
+}
+body {
+    color: #fff;
+}
+.color-white {
+    color: #fff !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.each-entry {
+    width: 90%;
+    background: #6b8e23;
+    border-radius: 5px;
+    box-shadow: 3px 1px 9px -1px #3d581a;
+}
