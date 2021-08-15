@@ -1,0 +1,22 @@
+.App > div {
+    width: 30%;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+.m-auto {
+    margin: auto;
+}
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    width: 45%;
+    margin: 16px;
+}
