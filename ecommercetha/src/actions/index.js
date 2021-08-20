@@ -57,3 +57,10 @@ export const toggleWishlist = (id) => {
         payload: id,
     };
 };
+
+export const removeFromWishlist = (id) => {
+    return {
+        type: "REMOVE_FROM_WISHLIST",
+        payload: id,
+    };
+};

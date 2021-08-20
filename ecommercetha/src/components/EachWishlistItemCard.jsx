@@ -1,8 +1,12 @@
 //jshint esversion: 9
 import React from "react";
 import Counter from "./counter";
+import { useDispatch } from "react-redux";
+import { removeFromWishlist, addToCartAction } from "./../actions";
 
 function EachWishlistItemCard(props) {
+    const dispatch = useDispatch();
+
     return (
         <div className="each-wishlist-item-card d-flex justify-content-center overflow-hidden my-4 p-4">
             <div className="image mx-5">
@@ -20,10 +24,17 @@ function EachWishlistItemCard(props) {
             </div>
             <div className="wishlist-action-buttons mx-5 align-self-center">
                 <div className="remove-from-wishlist pb-2">
-                    <button className="btn btn-outline-primary form-control">Remove</button>
+                    <button
+                        onClick={() => dispatch(removeFromWishlist(props.itemData.id))}
+                        className="btn btn-outline-primary form-control"
+                    >
+                        Remove
+                    </button>
                 </div>
                 <div className="add-to-cart pt-2">
-                    <button className="btn btn-primary form-control">Add to Cart</button>
+                    <button onClick={() => dispatch(addToCartAction(props.itemData.id))} className="btn btn-primary form-control">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>

@@ -38,6 +38,20 @@ const fetchDataReducer = (initState = init, action) => {
                 ...initState,
                 data: tempState,
             };
+        case "REMOVE_FROM_WISHLIST":
+            const tempData = [];
+            initState.data.forEach((item) => {
+                console.log(item.id);
+                console.log(item.id.toString() === action.payload.toString());
+                if (item.id.toString() === action.payload.toString()) {
+                    item.wishlist = false;
+                }
+                tempData.push(item);
+            });
+            return {
+                ...initState,
+                data: tempData,
+            };
         default:
             return initState;
     }
